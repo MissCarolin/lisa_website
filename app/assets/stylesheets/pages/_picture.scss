@@ -1,0 +1,56 @@
+
+.name_index h1 {
+    font-family: "Muli", "sans-serif";
+    font-weight: 300;
+    letter-spacing: 0.1em;
+    position: absolute;
+    width: 339px;
+    height: 108px;
+    left: 48px;
+    top: 131px;
+    z-index: 100;
+}
+
+.description_index h2 {
+    font-family: Muli;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 47px;
+    letter-spacing: 0.2em;
+
+    position: absolute;
+    width: 391px;
+    height: 155px;
+    left: 957px;
+    top: 307px;
+}
+
+#image1 {
+    position: absolute;
+    width: 553px;
+    height: 517px;
+    left: 12px;
+    top: 496px;
+    width: auto;
+    z-index: 1;
+}
+
+#image2 {
+    position: absolute;
+    width: 367px;
+    height: 504px;
+    left: 931px;
+    top: 384px;
+    width: auto;
+}
+
+#image3 {
+    position: absolute;
+    width: 825px;
+    height: 714px;
+    left: 311px;
+    top: 85px;
+    width: auto;
+}
+
