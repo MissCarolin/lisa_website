@@ -34,6 +34,9 @@
     top: 496px;
     width: auto;
     z-index: 1;
+    padding-right: 12px;
+    padding-top: 12px;
+    background: white;
 }
 
 #image2 {
@@ -54,3 +57,40 @@
     width: auto;
 }
 
+#image4 {
+    position: absolute;
+    left: 248px;
+    top: 1161px;
+}
+
+#image5 {
+    position: absolute;
+    left: 821px;
+    top: 979px;
+}
+
+#image6 {
+    position: absolute;
+    left: 145px;
+    top: 1737px;
+}
+
+#image7 {
+    position: absolute;
+    left: 665px;
+    top: 1974px;
+}
+
+#image8 {
+    position: absolute;
+    left: 400px;
+    top: 2605px;
+}
+#image11 {
+    position: absolute;
+    left: 930px;
+    top: 1492px;
+    width: 270px;
+    background: white;
+    padding: 12px;
+}

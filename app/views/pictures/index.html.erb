@@ -1,24 +1,48 @@
 <div class="container_index">
   <header class="navbar_index">
-    <p class="about">ABOUT</p>
+    <div class="content_navbar">
+      <a href="">ABOUT</a>
+      <div class="instagram_icon_div">
+      <%= link_to image_tag('instagram', alt: "", class: "instagram_icon"), "https://www.instagram.com/lisa_luft/", :target => "_blank"%>
+      <%= link_to image_tag('instagram_hover', alt: "", class: "instagram_icon"), "https://www.instagram.com/lisa_luft/", :target => "_blank"%>
+      </div>
+    </div>
   </header>
-  <div class="body_index">
-    <div class="name_index">
-      <h1>LISA GRATZKE</h1>
+    <div class="body_index">
+      <div class="name_index">
+        <h1>LISA GRATZKE</h1>
+      </div>
+        <div class="image_1">
+          <%= link_to image_tag('image_1', alt: "", id: "image1")%>
+        </div>
+        <div class="image_2">
+          <%= link_to image_tag('image2', alt: "", id: "image2")%>
+        </div>
+        <div class="image_3">
+          <%= link_to image_tag('image3', alt: "", id: "image3")%>
+      </div>
+      <div class="image_4">
+          <%= link_to image_tag('image4', alt: "", id: "image4")%>
+      </div>
+       <div class="image_5">
+          <%= link_to image_tag('image5', alt: "", id: "image5")%>
+      </div>
+      <div class="image_6">
+          <%= link_to image_tag('image6', alt: "", id: "image6")%>
+      </div>
+      <div class="image_7">
+          <%= link_to image_tag('image7', alt: "", id: "image7")%>
+      </div>
+      <div class="image_8">
+          <%= link_to image_tag('image8', alt: "", id: "image8")%>
+      </div>
+      <div class="image_11">
+          <%= link_to image_tag('image11', alt: "", id: "image11")%>
+      </div>
+      <div class="description_index">
+        <h2>PERSONAL ARTWORKS</h2>
+      </div>
     </div>
-    <div class="image_1">
-    <%= link_to image_tag('image_1', id: "image1")%>
-    </div>
-    <div class="image_2">
-    <%= link_to image_tag('image2', id: "image2")%>
-    </div>
-    <div class="image_3">
-    <%= link_to image_tag('image3', id: "image3")%>
-    </div>
-    <div class="description_index">
-      <h2>PERSONAL ARTWORKS</h2>
-    </div>
-  </div>
   <footer class="footer_index">
   </footer>
 </div>
