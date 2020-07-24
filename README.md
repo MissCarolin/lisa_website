@@ -1,24 +1,8 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+*work in progress*
 
-Things you may want to cover:
+* Ruby version 2.7.1
 
-* Ruby version
+A Portfolio Website of Art Pieces build with Ruby on Rails 
 
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
