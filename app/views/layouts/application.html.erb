@@ -13,7 +13,16 @@
   </head>
 
   <body>
-    <%= render 'shared/flashes' %>
+    <header class="navbar_index">
+      <div class="content_navbar">
+        <a href="">ABOUT</a>
+        <div class="instagram_icon_div">
+          <%= link_to image_tag('instagram', alt: "", class: "instagram_icon"), "https://www.instagram.com/lisa_luft/", :target => "_blank"%>
+          <%= link_to image_tag('instagram_hover', alt: "", class: "instagram_icon"), "https://www.instagram.com/lisa_luft/", :target => "_blank"%>
+        </div>
+      </div>
+    </header>
     <%= yield %>
+    <%= render 'shared/flashes' %>
   </body>
 </html>
