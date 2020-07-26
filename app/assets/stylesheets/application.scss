@@ -12,3 +12,10 @@
 @import "components/index";
 @import "pages/index";
 
+#content-wrap {
+  padding-bottom: 3.6rem;
+}
+#page-container {
+  position: relative;
+  min-height: 100vh;
+}
