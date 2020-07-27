@@ -14,7 +14,7 @@ window.addEventListener('load', (event) => {
     description1.classList.add('active')
     description2.classList.add('active')
     ;
-  }, 350);
+  }, 300);
 
 
   // pictures.forEach(picture => {
