@@ -17,11 +17,11 @@
     font-family: "Muli", "sans-serif";
     font-weight: 300;
     letter-spacing: 0.1em;
-    position: absolute;
     width: 339px;
     height: 108px;
     left: 48px;
     top: 131px;
+    display: block;
     z-index: 100;
     transform: translateY(20%) scale(1);
 }
@@ -30,16 +30,62 @@
     font-family: Muli;
     font-style: normal;
     font-weight: 300;
-    font-size: 24px;
+    font-size: 23px;
     line-height: 47px;
     letter-spacing: 0.2em;
-
     position: absolute;
     width: 391px;
     height: 155px;
     left: 957px;
     top: 307px;
+    transition: all 1s;
+    transform: translateY(60%) scale(1);}
+
+.description_index h2.active {
+    font-family: Muli;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 23px;
+    line-height: 47px;
+    letter-spacing: 0.2em;
+    position: absolute;
+    width: 391px;
+    height: 155px;
+    left: 957px;
+    top: 307px;
+    transform: translateY(20%) scale(1);
 }
+
+.description_index h3 {
+    font-family: Muli;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 32px;
+    line-height: 47px;
+    letter-spacing: 0.2em;
+    position: absolute;
+    width: 391px;
+    height: 155px;
+    left: 957px;
+    top: 381px;
+    transition: all 1s;
+    transform: translateY(40%) scale(0.8);
+  }
+
+  .description_index h3.active {
+    font-family: Muli;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 32px;
+    line-height: 47px;
+    letter-spacing: 0.2em;
+    position: absolute;
+    width: 391px;
+    height: 155px;
+    left: 957px;
+    top: 381px;
+    Transform: translateY(0%) scale(1);
+  }
 
 .images.image1 {
     position: absolute;
