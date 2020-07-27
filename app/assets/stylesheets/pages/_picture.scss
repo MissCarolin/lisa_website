@@ -9,6 +9,21 @@
     left: 48px;
     top: 131px;
     z-index: 100;
+    transition: all 1s;
+    transform: translateY(60%) scale(1);
+}
+
+.name_index h1.active {
+    font-family: "Muli", "sans-serif";
+    font-weight: 300;
+    letter-spacing: 0.1em;
+    position: absolute;
+    width: 339px;
+    height: 108px;
+    left: 48px;
+    top: 131px;
+    z-index: 100;
+    transform: translateY(20%) scale(1);
 }
 
 .description_index h2 {
@@ -26,7 +41,7 @@
     top: 307px;
 }
 
-#image1 {
+.images.image1 {
     position: absolute;
     width: 553px;
     height: 517px;
@@ -39,7 +54,7 @@
     background: white;
 }
 
-#image2 {
+.images.image2 {
     position: absolute;
     width: 367px;
     height: 504px;
@@ -48,7 +63,7 @@
     width: auto;
 }
 
-#image3 {
+.images.image3 {
     position: absolute;
     width: 825px;
     height: 714px;
@@ -57,36 +72,36 @@
     width: auto;
 }
 
-#image4 {
+.images.image4 {
     position: absolute;
     left: 248px;
     top: 1161px;
 }
 
-#image5 {
+.images.image5 {
     position: absolute;
     left: 821px;
     top: 979px;
 }
 
-#image6 {
+.images.image6 {
     position: absolute;
     left: 145px;
     top: 1737px;
 }
 
-#image7 {
+.images.image7 {
     position: absolute;
     left: 665px;
     top: 1974px;
 }
 
-#image8 {
+.images.image8 {
     position: absolute;
     left: 400px;
     top: 2605px;
 }
-#image11 {
+.images.image11 {
     position: absolute;
     left: 930px;
     top: 1492px;
