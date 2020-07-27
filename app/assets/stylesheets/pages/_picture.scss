@@ -84,8 +84,19 @@
     height: 155px;
     left: 957px;
     top: 381px;
-    Transform: translateY(0%) scale(1);
+    transform: translateY(0%) scale(1);
   }
+
+.images {
+  transition: all 1.3s;
+  transform: translateY(20%) scale(0.95);
+}
+
+.images.active {
+  opacity: 1;
+  transform: translateY(0%) scale(1);
+
+}
 
 .images.image1 {
     position: absolute;
