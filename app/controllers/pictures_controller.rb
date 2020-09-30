@@ -5,6 +5,10 @@ class PicturesController < ApplicationController
     @pictures = Picture.all
   end
 
+  def impressum
+
+  end
+
   def show
     @picture = Picture.find(params[:id])
   end
