@@ -2,3 +2,32 @@
     height: 100vh;
     background: white;
 }
+
+.content_impressum {
+    width: 75%;
+    margin: 0 auto;
+    text-align: left;
+    margin-top: 3rem;
+    font-family: "Muli", "sans-serif";
+    font-weight: 200;
+    letter-spacing: 0.1em;
+}
+
+.headline-impressum {
+    font-weight: 200;
+    font-size: 30px;
+}
+
+#lisa-content {
+    margin-left: 3rem;
+    margin-top: 2.5rem;
+}
+
+#caro-content {
+    margin-top: 2rem;
+}
+
+.header-p {
+    font-size: 15px;
+    margin-bottom: 0.3rem;
+}

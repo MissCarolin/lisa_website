@@ -2,23 +2,21 @@
 @import "config/fonts";
 @import "config/colors";
 @import "config/bootstrap_variables";
-
 // External libraries
 @import "bootstrap/scss/bootstrap";
 @import "font-awesome-sprockets";
 @import "font-awesome";
-
 // Your CSS partials
 @import "components/index";
 @import "pages/index";
-
 #content_wrap {
-  padding-bottom: 3.6rem;
-  height: 3173px;
-  background: white;
-
+    padding-bottom: 3.6rem;
+    height: 3173px;
+    background: white;
 }
+
 #page-container {
-  position: relative;
-   // min-height: 100vh;
+    position: relative;
+    background: white;
+    // min-height: 100vh;
 }
