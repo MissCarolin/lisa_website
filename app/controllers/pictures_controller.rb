@@ -1,5 +1,5 @@
 class PicturesController < ApplicationController
-  skip_before_action :authenticate_user!, only: :index
+  skip_before_action :authenticate_user!, only: [:index, :impressum]
 
   def index
     @pictures = Picture.all
