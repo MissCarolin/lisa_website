@@ -1,12 +1,14 @@
 // Specific CSS for your home-page
 html {
-  background: white;
+    background: white;
 }
 
-// *, *:before, *:after {
-//   box-sizing: inherit;
-// }
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
 
 p {
-  margin: 0px;
+    margin: 0px;
 }

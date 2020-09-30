@@ -1,5 +1,8 @@
 <footer class="footer">
-  <p class="footer_login">LOGIN</p>
+  <div class="footer_links">
+    <p class="footer_login">LOGIN</p>
+    <%= link_to 'IMPRESSUM', impressum_path,  class: 'footer_link' %>
+  </div>
   <div class="copyright_section">
     <%= image_tag('copyright.png', alt: "copyright", id: "copyright")%>
     <p class="footer_name">Lisa Gratzke 2020</p>
