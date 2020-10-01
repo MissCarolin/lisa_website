@@ -32,3 +32,9 @@ end
     redirect_to root_path
   end
 end
+
+private
+
+def picture_params
+  params.require(:picture).permit(:name, :description, :photo)
+end

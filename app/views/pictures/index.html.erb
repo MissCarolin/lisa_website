@@ -1,11 +1,19 @@
 <div class="flexbox">
-
-<div class="container">
-  <div class="row">
-    <% @pictures.each do |picture| %>
-        <div class="col-sm-6 col-lg-4 col-xs-12">
-          <%= picture %>
-         </div>
-      <% end %>
-    </div>
+  <div class="container">
+    <div class="cards">
+      <% @pictures.each do |picture| %>
+        <div class="row">
+            <div class="col-sm-6 col-lg-4 col-xs-12">
+            <%= picture.name %>
+            <%= link_to picture_path(picture), class: "picture_link" do %>
+            <div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.3)), url('<%= cl_image_path(picture.photo.key, crop: :fill) %>')">
+            <%= picture.description %>
+            </div>
+          <% end %>
+        </div>
+      </div>
+    <% end %>
+    </div >
+  </div>
 </div>
+
