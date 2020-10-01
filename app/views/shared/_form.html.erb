@@ -3,7 +3,7 @@
         <%= simple_form_for(@picture) do |f| %>
           <%= f.input :name %>
           <%= f.input :description %>
-          <%= f.input :photos, as: :file, class: "btn btn-outline-secondary" %>
+          <%= f.input :photo, as: :file, class: "btn btn-outline-secondary" %>
           <%= f.button :submit, class: "btn btn-secondary" %>
         <% end %>
 

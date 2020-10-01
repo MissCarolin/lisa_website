@@ -20,7 +20,7 @@ class PicturesController < ApplicationController
   def create
     @picture = Picture.new(picture_params)
     if @picture.save
-      redirect_to picture_path(@picture)
+      redirect_to pictures_path
     else
       render :new
   end
