@@ -1,5 +1,17 @@
 
-
+<%= link_to picture_path(picture) do %>
+  <div class="card-trip">
+    <%= cl_image_tag(picture.photo.key, crop: :fill) %>
+    <div class='test'>
+      <div class="card-trip-infos">
+        <div>
+          <h2><%= picture.name.upcase! %></h2>
+          <p><%= picture.description %></p>
+        </div>
+      </div>
+    </div>
+  </div>
+<% end %>
 
 
 
