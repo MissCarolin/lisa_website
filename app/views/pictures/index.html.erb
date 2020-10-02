@@ -4,7 +4,7 @@
   <div class="container">
     <div class="row">
       <% @pictures.each do |picture| %>
-        <div class="col-sm-6 col-lg-4 col-xs-12">
+        <div class="col-sm-6 col-lg-4 col-xs-12 card-content">
           <%= render 'shared/card',picture: picture %>
         </div>
       <% end %>

@@ -1,16 +1,16 @@
 
 <%= link_to picture_path(picture), class: "picture_link" do %>
-  <div class="cards">
-    <%= cl_image_tag(picture.photo.key) %>
-    <div class='test'>
-      <div class="card-category">
-        <div>
-          <h2><%= picture.name.upcase! %></h2>
-          <p><%= picture.description %></p>
+  <h2 class="card-headline"><%= picture.name %></h2>
+    <div class="cards">
+        <%= cl_image_tag(picture.photo.key, width: 400) %>
+        <div class='test'>
+        <div class="card-category">
+            <div>
+            <p><%= picture.description %></p>
+            </div>
         </div>
-      </div>
+        </div>
     </div>
-  </div>
 <% end %>
 
 
