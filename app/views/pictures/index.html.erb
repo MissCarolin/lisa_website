@@ -1,17 +1,13 @@
  <%= render 'shared/header' %>
+
 <div class="flexbox">
   <div class="container">
     <div class="row">
       <% @pictures.each do |picture| %>
-          <div class="col-sm-6 col-lg-4 col-xs-12">
-          <%= picture.name %>
-          <%= link_to picture_path(picture), class: "picture_link" do %>
-          <%= cl_image_tag(picture.photo.key, crop: :fill) %>
-          <%= picture.description %>
-          </div>
-          <% end %>
+        <div class="col-sm-6 col-lg-4 col-xs-12">
+          <%= render 'shared/card',picture: picture %>
+        </div>
       <% end %>
     </div>
   </div>
 </div>
-
