@@ -2,13 +2,11 @@
 <%= link_to picture_path(picture), class: "picture_link" do %>
   <h2 class="card-headline"><%= picture.name %></h2>
     <div class="cards">
-        <%= cl_image_tag(picture.photo.key, width: 400) %>
-        <div class='test'>
+        <%= cl_image_tag(picture.photo.key, crop: :fill, width: 400) %>
         <div class="card-category">
             <div>
-            <p><%= picture.description %></p>
+                <p><%= picture.description %></p>
             </div>
-        </div>
         </div>
     </div>
 <% end %>
