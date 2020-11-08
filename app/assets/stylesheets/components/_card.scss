@@ -13,22 +13,17 @@
     }
 }
 
-// .flexbox-cards {
-//     display: flex;
-//     flex-wrap: wrap;
-//     margin: 30px;
-// }
 .card-content {
-    // border: 1px solid lightgrey;
-    margin: 20px 0px;
+    // margin: 20px 0px;
 }
 
 .card-headline {
-    font-size: 1.3rem;
+    font-size: 0.9rem;
     opacity: 0.8;
     margin-bottom: 0px;
     display: inline;
-    padding-right: 10px;
+    padding-right: 3px;
+    text-transform: uppercase;
 }
 
 .cards img {
@@ -38,6 +33,7 @@
 
 .description-card-text {
     display: inline;
+    // text-align: justify;
 }
 
 .content-text {
