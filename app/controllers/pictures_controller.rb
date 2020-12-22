@@ -6,7 +6,9 @@ class PicturesController < ApplicationController
   end
 
   def impressum
+  end
 
+  def contact
   end
 
   def show
