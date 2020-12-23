@@ -1,6 +1,8 @@
 <%= link_to picture_path(picture), class: "picture_link" do %>
-    <% if current_user.id != nil %>
+    <% if current_user.nil? == false %>
         <p class="bin"><%= link_to image_tag('bin2.png', class: "delete_picture_card"), picture_path(picture.id), method: :delete, data: {confirm: 'are you sure?'}, class: "delete_pictures_link" %><p>
+    <% else %>
+
     <% end %>
 <div class="cards">
     <%= cl_image_tag(picture.photo.key, crop: :fill, width: 400) %>
