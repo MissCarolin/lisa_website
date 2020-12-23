@@ -1,9 +1,12 @@
 <footer class="footer">
   <div class="footer_links">
+  <% if current_user.nil?%>
     <%= link_to "LOGIN", new_user_session_path, class: "footer_link"%>
-    <% if current_user.nil? == false %>
+  <% end %>
+  <% if current_user.nil? == false %>
     <%= link_to 'NEW', new_picture_path,  class: 'footer_link' %>
-    <% end %>
+    <%= link_to "LOGOUT", destroy_user_session_path, class: "footer_link", :method => :delete %>
+  <% end %>
     <%= link_to 'IMPRESSUM', impressum_path,  class: 'footer_link' %>
   </div>
   <div class="copyright_section">
