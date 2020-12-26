@@ -1,10 +1,23 @@
- <%= render 'shared/header' %>
+<!-- Start individual header -->
+<header class="navbar_index">
+  <div class="content_navbar">
+  <%= link_to "HOME", root_path %>
+    <%= link_to 'IMAGES', pictures_path,  class: 'content-navbar' %>
+    <%= link_to 'CONTACT', contact_path,  class: 'content-navbar' %>
+    <div class="instagram_icon_div">
+      <%= link_to image_tag('instagram.png', alt: "", class: "instagram_icon"), "https://www.instagram.com/lisa_luft/", :target => "_blank"%>
+      <%= link_to image_tag('instagram_hover.png', alt: "", class: "instagram_icon"), "https://www.instagram.com/lisa_luft/", :target => "_blank"%>
+    </div>
+  </div>
+</header>
+<!-- End individual header -->
 
 <div class="flexbox">
   <div class="container-fluid">
     <div class="row align-items-center">
       <% @prints.each do |print| %>
         <div class="col-xs-12 col-sm-6 col-lg-4 card-content">
+
 <!-- Start of Print Card -->
           <%= link_to print_path(print), class: "pictures_link" do %>
             <% if current_user.nil? == false %>
@@ -21,6 +34,7 @@
         </div>
             <% end %>
 <!-- End of Print Card -->
+
         </div>
       <% end %>
     </div>
