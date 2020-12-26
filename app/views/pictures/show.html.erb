@@ -1,0 +1,10 @@
+ <%= render 'shared/header' %>
+    <div class="container_impressum">
+        <div class="content_impressum">
+            <h1 class="headline-show"><%= @picture.name %></h1>
+            <div class="show-content">
+                <%= cl_image_tag(@picture.photo.key, crop: :fill, width: 400) %>
+                <p class="image-pictures-description"><%= @picture.description %></p>
+            </div>
+        </div>
+    </div>
