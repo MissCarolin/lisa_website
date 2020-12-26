@@ -4,7 +4,8 @@
     <%= link_to "LOGIN", new_user_session_path, class: "footer_link"%>
   <% end %>
   <% if current_user.nil? == false %>
-    <%= link_to 'NEW', new_picture_path,  class: 'footer_link' %>
+    <%= link_to 'NEW IMAGE', new_picture_path,  class: 'footer_link' %>
+    <%= link_to 'NEW PRINT', new_print_path,  class: 'footer_link' %>
     <%= link_to "LOGOUT", destroy_user_session_path, class: "footer_link", :method => :delete %>
   <% end %>
     <%= link_to 'IMPRESSUM', impressum_path,  class: 'footer_link' %>
