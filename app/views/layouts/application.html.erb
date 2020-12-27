@@ -16,10 +16,10 @@
 <body>
   <div id="page">
     <div id="page-container">
-      <%= yield %>
+      <div class="content"><%= yield %></div>
       <%= render 'shared/flashes' %>
-      <%= render 'shared/footer' %>
     </div>
+   <div class="footer-container"> <%= render 'shared/footer' %></div>
   </div>
 </body>
 
