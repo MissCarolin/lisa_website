@@ -43,3 +43,8 @@
         justify-content: space-around;
         align-items: center;
     }
+    
+    .container-show {
+        min-height: 80vh;
+        display: grid;
+    }
