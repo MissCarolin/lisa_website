@@ -10,9 +10,11 @@ require("channels")
 
 import 'bootstrap';
 import { slider } from '../components/image_slider'
+import { sliderShow } from '../components/slider_show'
 
-window.addEventListener('turbolinks:load', () => {
-  slider();
+document.addEventListener('turbolinks:load', () => {
+    sliderShow();
+    slider();
 })
 
 // Uncomment to copy all static images under ../images to the output folder and reference
