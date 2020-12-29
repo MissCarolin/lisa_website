@@ -5,15 +5,16 @@
   <div class="container-fluid">
     <div class="row align-items-center">
       <% @prints.each do |print| %>
-        <div class="col-xs-12 col-sm-6 col-lg-4 card-content">
 
 <!-- Start of Print Card -->
         <% if current_user.nil? == false %>
+          <%= link_to print_path(print), class: "picture_link" do %>
             <p class="bin"><%= link_to image_tag('bin2.png', class: "delete_picture_card"), print_path(print.id), method: :delete, data: {confirm: 'are you sure?'}, class: "delete_pictures_link" %><p>
         <% end %>
-        <div class="cards">
-          <%= cl_image_tag(print.photo.key, crop: :fill, width: 400) %>
-          <%= link_to print_path(print), class: "picture_link" do %>
+         <% end %>
+        <div class="col-12 text-center">
+        <div class="cards print">
+            <%= cl_image_tag(print.photo.key, crop: :fill, width: 400) %>
             <div class="card-category">
                 <div class="content-text">
                     <h2 class="card-headline"><%= print.name %></h2>
@@ -23,9 +24,7 @@
         </div>
             <% end %>
 <!-- End of Print Card -->
-
         </div>
-      <% end %>
     </div>
   </div>
 </div>

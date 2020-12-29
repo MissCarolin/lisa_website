@@ -31,6 +31,15 @@
     object-fit: cover;
 }
 
+.cards.print img {
+    width: 450px;
+    object-fit: cover;
+}
+
+.cards.print {
+    margin-bottom: 80px;
+}
+
 .description-card-text {
     display: inline;
     // text-align: justify;
