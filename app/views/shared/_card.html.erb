@@ -2,8 +2,8 @@
         <p class="bin"><%= link_to image_tag('bin2.png', class: "delete_picture_card"), picture_path(picture.id), method: :delete, data: {confirm: 'are you sure?'}, class: "delete_pictures_link" %><p>
     <% end %>
 <div class="cards">
-    <%= cl_image_tag(picture.photo.key, crop: :fill, width: 400) %>
     <%= link_to picture_path(picture), class: "picture_link" do %>
+    <%= cl_image_tag(picture.photo.key, crop: :fill, width: 400) %>
     <div class="card-category">
         <div class="content-text">
             <h2 class="card-headline"><%= picture.name %></h2>
