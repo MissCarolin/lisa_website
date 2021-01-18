@@ -2,6 +2,7 @@ Rails.application.routes.draw do
   devise_for :users
  root to: 'pages#home'
  get '/impressum', to: 'pictures#impressum', as: :impressum
+ get '/datenschutz', to: 'pictures#datenschutz', as: :datenschutz
  get '/contact', to: 'pictures#contact', as: :contact
 
   resources :pictures, only: [:index, :show, :new, :create, :destroy]
