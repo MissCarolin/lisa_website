@@ -5,6 +5,10 @@ class PrintsController < ApplicationController
     @prints = Print.all
   end
 
+  def edit
+    @print = Print.find(params[:id])
+  end
+
   def show
     @print = Print.find(params[:id])
   end
@@ -19,18 +23,29 @@ class PrintsController < ApplicationController
       redirect_to prints_path
     else
       render :new
+    end
   end
-end
+
+  def update
+      @print = Print.find(params[:id])
+    if
+      @print.update(print_params)
+      redirect_to @print, notice: 'Print was successfully updated.'
+    else
+      render :edit
+    end
+  end
 
   def destroy
     @print = Print.find(params[:id])
     @print.destroy
     redirect_to prints_path
   end
+
+  private
+
+  def print_params
+    params.require(:print).permit(:name, :description, :photo)
+  end
 end
 
-private
-
-def print_params
-  params.require(:print).permit(:name, :description, :photo)
-end

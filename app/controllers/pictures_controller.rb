@@ -25,8 +25,12 @@ class PicturesController < ApplicationController
       redirect_to pictures_path
     else
       render :new
+    end
   end
-end
+
+  def edit
+  @picture = Picture.find(params[:id])
+  end
 
   def destroy
     @picture = Picture.find(params[:id])
