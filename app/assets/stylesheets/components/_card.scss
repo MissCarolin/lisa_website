@@ -53,4 +53,10 @@
 img.delete_picture_card {
     height: 13px;
     width: 13px;
+    margin: 10px 10px 15px 10px
+}
+
+.flexbox-edit-delete {
+    display: flex;
+    justify-content: center;
 }

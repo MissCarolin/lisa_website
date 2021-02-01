@@ -11,6 +11,10 @@ class PicturesController < ApplicationController
   def contact
   end
 
+  def edit
+    @picture = Picture.find(params[:id])
+  end
+
   def show
     @picture = Picture.find(params[:id])
   end
@@ -28,8 +32,14 @@ class PicturesController < ApplicationController
     end
   end
 
-  def edit
-  @picture = Picture.find(params[:id])
+def update
+      @picture = Picture.find(params[:id])
+    if
+      @picture.update(picture_params)
+      redirect_to pictures_path, notice: 'picture was successfully updated.'
+    else
+      render :edit
+    end
   end
 
   def destroy

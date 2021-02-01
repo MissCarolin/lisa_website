@@ -30,7 +30,7 @@ class PrintsController < ApplicationController
       @print = Print.find(params[:id])
     if
       @print.update(print_params)
-      redirect_to @print, notice: 'Print was successfully updated.'
+      redirect_to prints_path, notice: 'Print was successfully updated.'
     else
       render :edit
     end
