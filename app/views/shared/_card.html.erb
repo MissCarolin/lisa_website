@@ -1,5 +1,8 @@
     <% if current_user.nil? == false %>
+     <div class="flexbox-edit-delete">
         <p class="bin"><%= link_to image_tag('bin2.png', class: "delete_picture_card"), picture_path(picture.id), method: :delete, data: {confirm: 'are you sure?'}, class: "delete_pictures_link" %><p>
+        <p class="bin"><%= link_to image_tag('pen.png', class: "delete_picture_card"), edit_picture_path(picture.id) %><p>
+    </div>
     <% end %>
 <div class="cards">
     <%= link_to picture_path(picture), class: "picture_link" do %>

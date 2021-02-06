@@ -10,10 +10,10 @@
         <div class="col-12 text-center">
         <% if current_user.nil? == false %>
           <%= link_to print_path(print), class: "picture_link" do %>
-            <div class="flexbox-edit-delete">
+           <div class="flexbox-edit-delete">
               <p class="bin"><%= link_to image_tag('bin2.png', class: "delete_picture_card"), print_path(print.id), method: :delete, data: {confirm: 'are you sure?'}, class: "delete_pictures_link" %><p>
               <p class="bin"><%= link_to image_tag('pen.png', class: "delete_picture_card"), edit_print_path(print.id) %><p>
-            </div>
+           </div>
           <% end %>
         <% end %>
         <div class="cards print">
