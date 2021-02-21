@@ -1,8 +1,9 @@
+
  <%= render 'shared/header' %>
 
 <div class="flexbox">
   <div class="container-fluid">
-    <div class="row align-items-center">
+    <div class="row sortable-pictures align-items-center">
       <% @pictures.each do |picture| %>
         <div class="col-xs-12 col-sm-6 col-lg-4 card-content">
           <%= render 'shared/card',picture: picture %>
@@ -13,6 +14,7 @@
 </div>
 <% if current_user.nil? == false %>
 <script>
-  $(".row").sortable({});
+
+  // $(".sortable-pictures").sortable({});
 </script>
 <% end %>
