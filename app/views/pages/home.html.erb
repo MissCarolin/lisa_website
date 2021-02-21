@@ -54,14 +54,12 @@
   </div>
   <%= link_to "More", pictures_path,  class: "more-button" %>
 </div>
+
 <script>
-  const showH1 = () => {
-  const element = document.querySelector('#navbarText');
+  const element = document.querySelector('button');
   const header = document.querySelector('.name_index')
-    console.log(element)
-    if (element.classList.contains("show")) {
-    header.style.display = "none";
-    }
-}
-showH1()
+
+    element.addEventListener("click", (event) => {
+      header.classList.toggle('display-none');
+    })
 </script>
