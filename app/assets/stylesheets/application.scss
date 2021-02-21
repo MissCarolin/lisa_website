@@ -1,37 +1,48 @@
-// Graphical variables
-@import "config/fonts";
-@import "config/colors";
-@import "config/bootstrap_variables";
-// External libraries
-@import "bootstrap/scss/bootstrap";
-@import "font-awesome-sprockets";
-@import "font-awesome";
-// Your CSS partials
-@import "components/index";
-@import "pages/index";
-#content_wrap {
-    padding-bottom: 3.6rem;
-    height: 3173px;
-    background: white;
-}
-
-#page-container {
-    position: relative;
-    background: white;
-    width: 93%;
-    margin: 0 auto;
-    max-width: 1430px;
-    min-height: 93vh;
-}
-
-#page {
-    background: white;
-}
-
-@media (max-width: 767.98px) {
-    #content_wrap {
-        padding-bottom: 3.6rem;
-        height: auto !important;
-        background: white;
-    }
-}
+            // Graphical variables
+            @import "config/fonts";
+            @import "config/colors";
+            @import "config/bootstrap_variables";
+            // External libraries
+            @import "bootstrap/scss/bootstrap";
+            @import "font-awesome-sprockets";
+            @import "font-awesome";
+            // Your CSS partials
+            @import "components/index";
+            @import "pages/index";
+            #content_wrap {
+                padding-bottom: 3.6rem;
+                height: 3173px;
+                background: white;
+            }
+            
+            #page-container {
+                position: relative;
+                background: white;
+                width: 93%;
+                margin: 0 auto;
+                max-width: 1430px;
+                min-height: 93vh;
+            }
+            
+            #page {
+                background: white;
+            }
+            
+            @media (max-width: 767.98px) {
+                #content_wrap {
+                    padding-bottom: 3.6rem;
+                    height: auto !important;
+                    background: white;
+                }
+            }
+            
+            // MEDIA QUERIES
+            // small screen
+            @media (max-width: 767.98px) {
+                #page-container {
+                    background: white;
+                    width: 100%;
+                    margin: 0 auto;
+                    max-width: 100%;
+                }
+            }
