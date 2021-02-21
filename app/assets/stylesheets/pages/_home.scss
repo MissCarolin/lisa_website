@@ -214,6 +214,9 @@
             height: 108px;
             left: 48px;
             top: 44px;
+            position: initial;
+            display: block;
+            margin: 0 auto;
         }
         .name_index h1.active {
             font-family: "Muli", "sans-serif";
@@ -226,6 +229,9 @@
             display: block;
             z-index: 100;
             transform: translateY(50%) scale(1);
+            position: initial;
+            display: block;
+            margin: 0 auto;
         }
         .description_index h2 {
             font-family: Muli;
@@ -235,12 +241,13 @@
             line-height: 47px;
             letter-spacing: 0.2em;
             position: absolute;
-            width: 391px;
-            height: 155px;
+            width: fit-content;
+            height: fit-content;
             left: 92px;
             top: 260px;
             transition: all 1.3s;
             transform: translateY(50%) scale(1);
+            background: #ffffffc4;
         }
         .description_index h2.active {
             font-family: Muli;
@@ -271,6 +278,7 @@
             top: 352px;
             transition: all 1.3s;
             transform: translateY(20%) scale(0.8);
+            background: #ffffffc4;
         }
         .description_index h3.active {
             font-family: Muli;
