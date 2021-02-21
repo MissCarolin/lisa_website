@@ -62,3 +62,17 @@
 #copyright {
     width: 12px;
 }
+
+//MEDIA QUERIES
+//smal device
+@media (max-width: 767.98px) {
+    .footer_link {
+        font-size: 12px;
+    }
+    .copyright_section {
+        margin-left: 20px;
+    }
+    .footer_name {
+        font-size: 10px;
+    }
+}
