@@ -4,10 +4,10 @@
 <div class="flexbox">
   <div class="container-fluid">
     <div class="row align-items-center">
+        <div class="col-12 text-center">
       <% @prints.each do |print| %>
 
 <!-- Start of Print Card -->
-        <div class="col-12 text-center">
         <% if current_user.nil? == false %>
           <%= link_to print_path(print), class: "picture_link" do %>
            <div class="flexbox-edit-delete">
@@ -16,9 +16,10 @@
            </div>
           <% end %>
         <% end %>
+
         <div class="cards print">
              <%= link_to print_path(print), class: "picture_link" do %>
-            <%= cl_image_tag(print.photo.key, crop: :fill, width: 400) %>
+            <%= cl_image_tag(print.photo.key, crop: :fill) %>
             <div class="card-category">
                 <div class="content-text">
                     <h2 class="card-headline"><%= print.name %></h2>
@@ -28,6 +29,7 @@
         </div>
         <% end %>
         <% end %>
+
 <!-- End of Print Card -->
         </div>
     </div>
