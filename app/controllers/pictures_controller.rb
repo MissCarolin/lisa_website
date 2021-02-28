@@ -2,7 +2,7 @@ class PicturesController < ApplicationController
   skip_before_action :authenticate_user!, only: [:index, :impressum, :contact, :show, :datenschutz]
 
   def index
-    @pictures = Picture.all
+    @pictures = Picture.all.sort_by{ |picture| picture.id}
   end
 
   def impressum
@@ -52,5 +52,5 @@ end
 private
 
 def picture_params
-  params.require(:picture).permit(:name, :description, :photo)
+  params.require(:picture).permit(:id, :name, :description, :photo)
 end
