@@ -9,3 +9,4 @@
 # puts "creating users"
 
 #
+user = User.create!(email:"l.gratzke@gmx.de", password:"lisaluft123")
